@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -21,7 +22,11 @@ body {
     height: 300px;
 }
 
-input[type=text], select {
+.mytext, select {
+    color: #777;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -37,7 +42,7 @@ input {
     background-color: white;
     color: #777;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
-	font-weight: 100;
+    font-weight: 100;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -55,7 +60,8 @@ input {
 Txt lyk a c00l m0m
   <br>
   <meta name="viewport"content="width=device-width, user-scalable=no"/>
-  <input type="text" id="txt" class="mytext">
+  <textarea name="text" cols="40" rows="5"id="txt" class="mytext"></textarea>
+  
   <br>
 <input type="submit" value="Submit" onClick="getDown()">
 
@@ -63,16 +69,16 @@ Txt lyk a c00l m0m
 <p id=newtxt>Click "Submit" to get down with the cool kids.</p>
 
 <script type="text/javascript">
-	var str = 'and  and anotherate and by the way and see oh my god be right back right like thanks back how are you Talk to you later';
+  var str = 'and  and anotherate and by the way and see oh my god be right back right like thanks back how are you Talk to you later';
 
 function getDown(){
 var txt = document.getElementById("txt").value;
-var result = txt.replace(/Talk to you later/gi,'ttyl').replace(/What are you doing/gi,'wyd').replace(/be right back/gi,'brb').replace(/I love you/gi,'ily')replace(/what/gi,'w@').
-replace(/igh/gi,'y').replace(/oh my god/gi,'omg').replace(/okay/gi,'k').replace(/by the way/gi,'btw').replace(/thanks/gi,'tks').
+var result = txt.replace(/Talk to you later/gi,'ttyl').replace(/What are you doing/gi,'wyd').replace(/be right back/gi,'brb').replace(/what/gi,'w@').replace(/i love you/gi,'ily').replace(/love/gi,'luv').
+replace(/igh/gi,'y').replace(/oh my god/gi,'omg').replace(/okay/gi,'k').replace(/by the way/gi,'btw').
 replace(/ng/gi,'n').replace(/text/gi,'txt').replace(/ike/gi,'yk').
-replace(/are/gi,'R').replace(/ate/gi,'8').
+replace(/are/gi,'R').replace(/ate/gi,'8').replace(/to/gi,'2').replace(/for/gi,'4').replace(/from/gi,'4m').
 replace(/and/gi,'N').replace(/see/gi,'c').replace(/you/gi,'U').replace(/o/gi,'0').
-replace(/a/gi,'4').replace(/e/gi,'3');
+replace(/thanks/gi,'tks');
 
 console.log(result);
 
