@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 30px;
+  color: #777;
+  background: #C9E9EA;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.mytext {
+    width: 300px;
+    height: 300px;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+input {
+    width: 10em;
+    background-color: white;
+    color: #777;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    top:50%; 
+    border-radius: 25px;   left:50%;
+    box-shadow: 5px 10px 5px #888888;
+
+}
+</style>
+
+
+Txt lyk a c00l m0m
+  <br>
+  <input type="text" id="txt" class="mytext">
+  <br>
+<input type="submit" value="Submit" onClick="getDown()">
+
+
+<p id=newtxt>Click "Submit" to get down with the cool kids.</p>
+
+<script type="text/javascript">
+	var str = 'and  and anotherate and by the way and see oh my god be right back right like thanks back how are you Talk to you later';
+
+function getDown(){
+var txt = document.getElementById("txt").value;
+var result = txt.replace(/Talk to you later/gi,'ttyl').replace(/be right back/gi,'brb').
+replace(/igh/gi,'y').replace(/oh my god/gi,'omg').replace(/okay/gi,'k').replace(/by the way/gi,'btw').
+replace(/ng/gi,'n').replace(/text/gi,'txt').replace(/ike/gi,'yk').
+replace(/are/gi,'R').replace(/ate/gi,'8').
+replace(/and/gi,'N').replace(/see/gi,'c').replace(/you/gi,'U').replace(/o/gi,'0').
+replace(/thanks/gi,'tks').replace(/a/gi,'4').replace(/e/gi,'3');
+
+console.log(result);
+
+newtxt = document.getElementById("newtxt");
+newtxt.innerHTML = result
+}
+
+</script>
+
+</body>
+</html>
